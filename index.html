@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Snake Game!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="main-container">
+            <div class="game-container">
+                <h3 class="text-center" id="start-game">Iniciar Jogo</h3>
+                <h3 class="text-center" id="stop-game">Parar o Jogo</h3>
+                <h3 class="text-center" id="score-container"><u>Pontuação</u> <br/> <br> <span id="score">0</span></h3>
+                <div class="game-area"></div>
+            </div>
+
+            <div class="game-setting">
+                <h3>Configurações do Jogo</h3>
+
+                <div class="setting-group">
+                    <label for="game-difficulty"><u>Dificuldade do Jogo</u></label>
+                    <select name="gameDifficulty" class="setting" id="game-difficulty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option selected>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="controls">
+                    <button id="up">⬆️</button>
+                    <div>
+                      <button id="left">⬅️</button>
+                      <button id="down">⬇️</button>
+                      <button id="right">➡️</button>
+                    </div>
+                </div>
+                  
+                <div class="setting-group">
+                    <label>Área de Jogo (Linha x Célula)</label>
+                    <input type="number" id="row-length" class="setting" value="50" />
+                    <input type="number" id="cell-length" class="setting" value="50" />
+                    <br />
+                    <br />
+
+                    <button type="button" class="btn" id="set-game-settings">
+                        <strong>Definir Configurações</strong>
+                        <div id="container-stars">
+                            <div id="stars"></div>
+                        </div>
+                        <div id="glow">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </button>
+  
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="snake.js"></script>
+        <script type="text/javascript" src="core.js"></script>
+    </body>
+</html>
